@@ -91,7 +91,7 @@ namespace LinearDataStructures
                         returnedInts.Enqueue(currentNumber);
                         currentNumber += 1;
                     }
-                    else if (ints.Peek() == currentNumber + 2) // checks for example 0 20 if the next checkpoint can be reached faster
+                    else if (ints.Peek() == currentNumber + 2) // checks for example 0 20 if the next checkpoint can be reached faster, mainly if the input is 0 and the startingNumber is 2
                     {
                         currentNumber += 2;
                     }
@@ -105,7 +105,7 @@ namespace LinearDataStructures
                 //With this else if I get the starting number as same as the current number, 
                 //so I can start looping for the next example 4 20, 
                 //the starting number is 5 (20 / 2 /2) so it adds 1 and goes to the checkpoint --> 5
-
+                //also covers the small and big inputs 100  133
                 else if (currentNumber * 2 <= startingNumber && 
                     currentNumber * 2 <= end)
                 {

@@ -10,67 +10,6 @@ namespace LinearDataStructures
     {
         public static void Main()
         {
-            
-            int n = 0;
-
-
-            int m = 20;
-
-
-            Tuple<int, List<int>> element = new Tuple<int, List<int>>(n,new List<int>());
-
-
-            Queue<Tuple<int, List<int>>> list = new Queue<Tuple<int, List<int>>>();
-
-
-            list.Enqueue(element);
-
-
-            while (true)
-            {
-
-
-                var current = list.Dequeue();
-
-
-                List<int> currentPath = current.Item2.ToList();
-
-
-                currentPath.Add(current.Item1);
-
-
-                list.Enqueue(new Tuple<int, List<int>>(current.Item1 + 1, currentPath));
-
-
-                list.Enqueue(new Tuple<int, List<int>>(current.Item1 + 2, currentPath));
-
-
-                list.Enqueue(new Tuple<int, List<int>>(current.Item1 * 2, currentPath));
-
-
-                if (current.Item1 == m)
-                {
-
-
-                    foreach (var item in current.Item2)
-                    {
-
-
-                        Console.WriteLine(item);
-
-
-                    }
-
-
-                    Console.WriteLine(current.Item1);
-
-
-                    break;
-
-
-                }
-            }
-
             bool continueProgram = true;
             while (continueProgram) //Loops the program until end is entered
             {
