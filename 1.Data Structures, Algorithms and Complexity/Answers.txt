@@ -1,0 +1,6 @@
+1) The running time will be n*n with steps n*n because "start" and "end" with each iteration come closer to each other.
+
+2)
+The running time of the program will be n + z*m, where z is the number of even numbers, because the first cicle is runned all the time and the second cicle is runned only when the number is even, or z times. The best case where all are even it will be n*m and in the worst case is n, because it will never go to the next cicle
+
+3)The program is runned n*m times, because depending on the rows and cols the cicle and recursion will be called N(rows)*M(cols) times.
